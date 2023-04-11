@@ -1,0 +1,7 @@
+# Create the image pull secret
+
+kubectl create secret docker-registry "container-registry-name" \
+    --namespace default \
+    --docker-server= "Login server of acr" \
+    --docker-username= "acr username" \
+    --docker-password= "acr paasword"
